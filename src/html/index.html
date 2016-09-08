@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>.:: Customizr - DEMO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="customizr.css">
+        <link rel="stylesheet" href="customizr-demo.css">
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="customizr.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="target"></div>
+
+        <div id="filter">
+        </div>
+        <button onclick="console.log(cstmzr.value())">Valores</button>
+        <script>
+            var galapagos = {
+                id: "galapago",
+                text: "Galápagos",
+                image: "galapago-gris.png",
+                layers : [
+                // layer 1: Basto
+                {
+                    class: "basto",
+                    label: "Basto: ",
+                    control: "#select-1",
+                    defaultText: "Selecciona un basto",
+                    options: [
+                        {id: "basto-cafe", text: "Basto Café", image: "basto-cafe.png"},
+                        {id: "basto-envejecido", text: "Basto Envejecido", image: "basto-envejecido.png"},
+                        {id: "basto-natural", text: "Basto Natural", image: "basto-natural.png"},
+                        {id: "basto-negro", text: "Basto Negro", image: "basto-negro.png"}
+                    ]
+                },
+                // layer 2: Guardabarros
+                {
+                    class: "guardabarros",
+                    label: "Guardabarros: ",
+                    control: "#select-2",
+                    defaultText: "Selecciona un guardabarros",
+                    options: [
+                        {id: "guardabarros-cafe", text: "Guardabarros Café", image: "guardabarros-cafe.png"},
+                        {id: "guardabarros-envejecido", text: "Guardabarros Envejecido", image: "guardabarros-envejecido.png"},
+                        {id: "guardabarros-natural", text: "Guardabarros Natural", image: "guardabarros-natural.png"},
+                        {id: "guardabarros-negro", text: "Guardabarros Negro", image: "guardabarros-negro.png"}
+                    ]
+                },
+                // layer 3: Aletas
+                {
+                    class: "aletas",
+                    label: "Aletas: ",
+                    control: "#select-3",
+                    defaultText: "Selecciona unas aletas",
+                    options: [
+                        {id: "aletas-cafe", text: "Aletas Café", image: "aletas-cafe.png"},
+                        {id: "aletas-envejecido", text: "Aletas Envejecido", image: "aletas-envejecido.png"},
+                        {id: "aletas-natural", text: "Aletas Natural", image: "aletas-natural.png"},
+                        {id: "aletas-negro", text: "Aletas Negro", image: "aletas-negro.png"}
+                    ]
+                },
+                // layer 4: Siento
+                {
+                    class: "siento",
+                    label: "Siento: ",
+                    control: "#select-4",
+                    defaultText: "Selecciona un siento",
+                    options: [
+                        {id: "siento-cafe", text: "Siento Café", image: "siento-cafe.png"},
+                        {id: "siento-envejecido", text: "Siento Envejecido", image: "siento-envejecido.png"},
+                        {id: "siento-natural", text: "Siento Natural", image: "siento-natural.png"},
+                        {id: "siento-negro", text: "Siento Negro", image: "siento-negro.png"}
+                    ]
+                }
+            ]};
+            var galapagos2 = {
+                id: "galapago-2",
+                text: "Galápagos 2",
+                image: "galapago-negro.png",
+                layers : [
+                // layer 1: Basto
+                {
+                    class: "basto",
+                    label: "Basto: ",
+                    control: "#select-1",
+                    defaultText: "Selecciona un basto",
+                    options: [
+                        {id: "basto-cafe", text: "Basto Café", image: "basto-cafe.png"},
+                        {id: "basto-envejecido", text: "Basto Envejecido", image: "basto-envejecido.png"},
+                        {id: "basto-natural", text: "Basto Natural", image: "basto-natural.png"},
+                        {id: "basto-negro", text: "Basto Negro", image: "basto-negro.png"}
+                    ]
+                },
+                // layer 2: Guardabarros
+                {
+                    class: "guardabarros",
+                    label: "Guardabarros: ",
+                    control: "#select-2",
+                    defaultText: "Selecciona un guardabarros",
+                    options: [
+                        {id: "guardabarros-cafe", text: "Guardabarros Café", image: "guardabarros-cafe.png"},
+                        {id: "guardabarros-envejecido", text: "Guardabarros Envejecido", image: "guardabarros-envejecido.png"},
+                        {id: "guardabarros-natural", text: "Guardabarros Natural", image: "guardabarros-natural.png"},
+                        {id: "guardabarros-negro", text: "Guardabarros Negro", image: "guardabarros-negro.png"}
+                    ]
+                }
+            ]};
+            var cstmzr = new Customizr({
+                target: "#target",
+                filter: "#filter",
+                typesText: "Tipos de Silla",
+                types: [ galapagos, galapagos2 ],
+                showTitle: true
+            });
+        </script>
+    </body>
+</html>

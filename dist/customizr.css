@@ -1,0 +1,41 @@
+.customizr-base {
+  position: relative; }
+
+.customizr-layer {
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  transition: opacity .3s linear;
+  opacity: 0; }
+  .customizr-layer.visible {
+    opacity: 1; }
+
+.customizr-layer-0 {
+  z-index: 0; }
+
+.customizr-layer-1 {
+  z-index: 10; }
+
+.customizr-layer-2 {
+  z-index: 20; }
+
+.customizr-layer-3 {
+  z-index: 30; }
+
+.customizr-layer-4 {
+  z-index: 40; }
+
+.customizr-layer-5 {
+  z-index: 50; }
+
+.customizr-layer-6 {
+  z-index: 60; }
+
+.customizr-layer-7 {
+  z-index: 70; }
+
+.customizr-layer-8 {
+  z-index: 80; }
+
+.customizr-layer-9 {
+  z-index: 90; }

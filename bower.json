@@ -1,0 +1,17 @@
+{
+  "name": "customizr",
+  "description": "Customizr",
+  "main": "dist/customizr.js",
+  "authors": [
+    "Jose Conde"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "customizr",
+  "version": "0.0.3",
+  "description": "Customizr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://jose.conde@xintana.synology.me:41/volume1/git/customizr"
+  },
+  "author": "Jose Conde",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.3.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "rollup": "^0.34.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

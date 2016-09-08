@@ -1,0 +1,43 @@
+$imagesPath: "./images/";
+.customizr-base {
+    float: left;
+    height: 600px;
+    width: 600px;
+
+    .customizr-type, .customizr-layer{
+        height: 600px;
+        width: 600px;
+    }
+
+    .galapago { background-image: url($imagesPath + "galapago-gris.png") }
+    .galapago-2 { background-image: url($imagesPath + "galapago-negro.png") }
+
+    .basto-cafe { background-image: url($imagesPath + "basto-cafe.png") }
+    .basto-envejecido { background-image: url($imagesPath + "basto-envejecido.png") }
+    .basto-natural { background-image: url($imagesPath + "basto-natural.png") }
+    .basto-negro { background-image: url($imagesPath + "basto-negro.png") }
+
+    .aletas-cafe { background-image: url($imagesPath + "aletas-cafe.png") }
+    .aletas-envejecido { background-image: url($imagesPath + "aletas-envejecido.png") }
+    .aletas-natural { background-image: url($imagesPath + "aletas-natural.png") }
+    .aletas-negro { background-image: url($imagesPath + "aletas-negro.png") }
+
+    .guardabarros-cafe { background-image: url($imagesPath + "guardabarros-cafe.png") }
+    .guardabarros-envejecido { background-image: url($imagesPath + "guardabarros-envejecido.png") }
+    .guardabarros-natural { background-image: url($imagesPath + "guardabarros-natural.png") }
+    .guardabarros-negro { background-image: url($imagesPath + "guardabarros-negro.png") }
+
+    .siento-cafe { background-image: url($imagesPath + "siento-cafe.png") }
+    .siento-envejecido { background-image: url($imagesPath + "siento-envejecido.png") }
+    .siento-natural { background-image: url($imagesPath + "siento-natural.png") }
+    .siento-negro { background-image: url($imagesPath + "siento-negro.png") }
+}
+#filter {
+    float: left;
+    margin-left: 30px;
+
+    label {
+        display: inline-block;
+        width: 120px;
+    }
+}
